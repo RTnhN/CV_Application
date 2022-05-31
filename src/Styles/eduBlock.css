@@ -1,0 +1,30 @@
+.eduBlock{
+  display: grid;
+  grid-template-columns: 4rem 1fr 4rem;
+  grid-template-areas:
+  '. schoolName edit'
+  '. FOS edit'
+  '. date edit'; 
+}
+
+#schoolName{
+  grid-area: schoolName;
+  font-weight: bold;
+  text-align: left;
+}
+
+#FOS{
+  grid-area: FOS;
+  text-align: left;
+}
+
+#date{
+  grid-area: date;
+  text-align: left;
+}
+
+.eduBlock>button{
+  grid-area: edit;
+  align-self: flex-start;
+  justify-self: center;
+}

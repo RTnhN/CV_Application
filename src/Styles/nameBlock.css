@@ -1,0 +1,74 @@
+*{
+  margin:0;
+  padding:0;
+
+}
+
+
+#nameBlock{
+  display: grid;
+  grid-template-columns: 4rem 1fr 4rem;
+  grid-template-areas: 
+  '. name edit'
+  '. address edit'
+  '. contact edit';
+}
+
+#name{
+  grid-area: name;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#address{
+  grid-area: address;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5em;
+  border-radius: 0.5em;
+} 
+
+#contactContainer{
+  grid-area: contact;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contactType{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap:.5rem;
+}
+
+.contactType>img{
+  height: 1.5em;
+  width: 1.5em;
+}
+
+#nameBlock>button.editButton{
+  grid-area: edit;
+  align-self: flex-start;
+  justify-self: center;
+}
+.editButton{
+  background-color: #fff;
+  border: none;
+  color: hsl(0, 0%, 80%);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.editButton:hover{
+  color: hsl(0, 0%, 0%);
+}
+
+
+
+
