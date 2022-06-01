@@ -57,15 +57,17 @@
   align-self: flex-start;
   justify-self: center;
 }
-.editButton{
+.editButton, .deleteButton{
   background-color: #fff;
   border: none;
-  color: hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 90%);
   font-size: 2rem;
   cursor: pointer;
 }
 
-.editButton:hover{
+
+
+.editButton:hover, .deleteButton:hover{
   color: hsl(0, 0%, 0%);
 }
 

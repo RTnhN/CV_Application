@@ -1,39 +1,39 @@
-.eduBlock{
+.workBlock{
   display: grid;
   margin: 1rem 0;
   grid-template-columns: 4rem 1fr 4rem;
   grid-template-areas:
-  '. schoolName edit'
-  '. schoolName edit'
-  '. FOS edit'
-  '. FOS delete'
-  '. date delete' 
+  '. workName edit'
+  '. workName edit'
+  '. title edit'  
+  '. title delete'
+  '. date delete'
   '. date delete'; 
 }
 
-.schoolName{
-  grid-area: schoolName;
+.workName{
+  grid-area: workName;
   font-weight: bold;
   text-align: left;
 }
 
-.FOS{
-  grid-area: FOS;
+.title{
+  grid-area: title;
   text-align: left;
 }
 
-.schoolDate{
+.workDate{
   grid-area: date;
   text-align: left;
 }
 
-.eduBlock>button.editButton{
+.workBlock>button.editButton{
   grid-area: edit;
   align-self: flex-start;
   justify-self: center;
 }
 
-.eduBlock>button.deleteButton{
+.workBlock>button.deleteButton{
   grid-area: delete;
   align-self: flex-end;
   justify-self: center;

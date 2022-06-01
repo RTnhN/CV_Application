@@ -68,8 +68,7 @@ class NameBlock extends React.Component{
         <span id='github' onFocus={this.onFocus} suppressContentEditableWarning="true" contentEditable={this.state.contentEditable}>{this.state.userData.github}</span>
         </div>
       </div>
-      <button onClick={this.onEdit} className="material-symbols-outlined editButton">{this.state.editIcon}</button>
-
+      {!this.props.edit && <button onClick={this.onEdit} className="material-symbols-outlined editButton">{this.state.editIcon}</button>}
     </div>
   )}
 }
